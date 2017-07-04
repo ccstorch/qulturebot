@@ -1,6 +1,6 @@
 module.exports = (slapp) => {
-  require('./help')(slapp);
   require('./thanks')(slapp);
+  require('./help')(slapp);
   require('./who')(slapp);
   require('./hello')(slapp);
   require('./bye')(slapp);

@@ -17,7 +17,7 @@ module.exports = (slapp) => {
   Capriche nas sugestões. Estamos ansiosos para fazer eu ser mais útil.
   `
 
-  slapp.message(/(Ajudar|Ajuda|Socorro|Não consigo|Nao consigo|Não sei|não sei|explicar|explica|como funciona)/i, ['mention', 'direct_message'], (msg) => {
+  slapp.message(/(Ajudar|Ajuda|Socorro|Não consigo|Nao consigo|Não sei|não sei|explicar|explica|como funciona)/i, ['direct_message'], (msg) => {
     msg.say(HELP_TEXT)
   })
 }
