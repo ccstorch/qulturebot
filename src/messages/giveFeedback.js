@@ -11,9 +11,9 @@ module.exports = (slapp) => {
             { name: 'answer', text: 'Pedir',  type: 'button',  value: 'pedir' },
             { name: 'answer', text: 'Dar Elogio',  type: 'button',  value: 'darElogio' }
           ]
-        }]
-      })
-    });
+        }
+      ]
+    })
   });
 
   slapp.action('give_feedback_callback', 'answer', (msg, value) => {
