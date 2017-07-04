@@ -1,10 +1,9 @@
 module.exports = (slapp) => {
-  require('./hello')(slapp);
   require('./help')(slapp);
   require('./thanks')(slapp);
-  require('./attachment')(slapp);
-  require('./random')(slapp);
-  require('./bye')(slapp);
   require('./who')(slapp);
+  require('./hello')(slapp);
+  require('./bye')(slapp);
   require('./curse')(slapp);
+  require('./random')(slapp);
 }
