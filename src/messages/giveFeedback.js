@@ -8,7 +8,7 @@ module.exports = (slapp) => {
           callback_id: 'give_feedback_callback',
           actions: [
             { name: 'answer', text: 'Dar', type: 'button', value: 'dar' },
-            { name: 'answer', text: 'Pedir',  type: 'button',  value: 'pedir' }
+            { name: 'answer', text: 'Pedir',  type: 'button',  value: 'pedir' },
             { name: 'answer', text: 'Dar Elogio',  type: 'button',  value: 'darElogio' }
           ]
         }]
