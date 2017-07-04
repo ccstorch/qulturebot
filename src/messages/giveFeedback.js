@@ -1,6 +1,5 @@
 module.exports = (slapp) => {
-  slapp.message(/(Dar feedback|feedback)/i, ['direct_message'], (msg, text) => {
-    msg.say(["Até mais.", "Falou.", "Tchauzinho."]);
+  slapp.message(/(Dar feedback|feedback)/i, 'direct_message', (msg, text) => {
     msg.say({
       attachments: [
         {
