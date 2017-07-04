@@ -1,4 +1,5 @@
 module.exports = (slapp) => {
+  require('./giveFeedback')(slapp);
   require('./thanks')(slapp);
   require('./help')(slapp);
   require('./who')(slapp);
