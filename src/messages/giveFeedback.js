@@ -20,8 +20,8 @@ module.exports = (slapp) => {
   slapp.action('give_feedback_callback', 'answer', (msg, value) => {
     switch (value) {
       case 'give': return msg.respond(msg.body.response_url, 'https://app.qulture.rocks/#/company//feedbacks/give/');
-      case 'givePraise': return msg.respond(msg.body.response_url, 'https://app.qulture.rocks/#/company//feedbacks/give/');
-      case 'ask': return msg.respond(msg.body.response_url, 'https://app.qulture.rocks/#/company//feedbacks/give/');
+      case 'givePraise': return msg.respond(msg.body.response_url, 'https://app.qulture.rocks/#/company//feedbacks/give-praise/');
+      case 'ask': return msg.respond(msg.body.response_url, 'https://app.qulture.rocks/#/company//feedbacks/ask/');
     }
   })
 }
