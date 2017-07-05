@@ -1,16 +1,16 @@
 module.exports = (slapp) => {
   slapp.message(/(Dar feedback|feedback)/i, 'direct_message', (msg, text) => {
     msg.say({
-      text: '',
+      text: 'Posso te ajudar com alguns atalhos espertos. No futuro, você vai poder fazer tudo isso daqui.',
       attachments: [
         {
           text: '',
           fallback: 'Fallback?',
           callback_id: 'give_feedback_callback',
           actions: [
-            { name: 'answer', text: 'Dar', type: 'button', value: 'give' },
-            { name: 'answer', text: 'Pedir',  type: 'button',  value: 'ask' },
-            { name: 'answer', text: 'Dar Elogio',  type: 'button',  value: 'givePraise' }
+            { name: 'answer', text: 'Mandar feedback', type: 'button', value: 'give' },
+            { name: 'answer', text: 'Pedir feedback',  type: 'button',  value: 'ask' },
+            { name: 'answer', text: 'Mandar elogio',  type: 'button',  value: 'givePraise' }
           ]
         }
       ]
